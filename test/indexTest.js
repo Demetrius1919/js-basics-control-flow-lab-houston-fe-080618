@@ -1,8 +1,9 @@
 const expect = chai.expect;
 
 describe('index.js', function () {
-  describe('scuberGreetingForFeet()', function () {
-    it('gives customers a free sample if the ride is less than or equal to 400 feet', function () {
+  describe('scuberGreetingForFeet()', function (feet) {
+    it('gives customers a free sample if the ride is less than or equal to 400 feet', function ()
+    {
       expect(scuberGreetingForFeet(199)).to.equal('This one is on me!');
     });
 
@@ -20,7 +21,7 @@ describe('index.js', function () {
       expect(ternaryCheckCity('NYC')).to.equal('Ok, sounds good.');
     });
 
-    it('should return "No go." if the destination city is not NYC', function () {
+    it('should return "No go." if the destination city is not NYC',function  () {
       expect(ternaryCheckCity('Pittsburgh')).to.equal('No go.');
     });
   });
